@@ -2,10 +2,10 @@ import face_recognition
 import numpy as np
 import cv2
 
-person1_image = face_recognition.load_image_file("nice.jpg")
+person1_image = face_recognition.load_image_file("xxx.jpg")
 person1_face_encoding = face_recognition.face_encodings(person1_image)[0]
 
-person2_image = face_recognition.load_image_file("nit.jpg")
+person2_image = face_recognition.load_image_file("xxx1.jpg")
 person2_face_encoding = face_recognition.face_encodings(person2_image)[0]
 
 known_face_encodings = [
