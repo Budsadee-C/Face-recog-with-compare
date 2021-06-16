@@ -2,7 +2,7 @@ import face_recognition
 import numpy as np
 import cv2
 
-pic = ["nice.jpg","nit.png","mook.jpg"]
+pic = ["xxx.jpg","xxx1.png","xxx2.jpg"]
 
 person1_image = face_recognition.load_image_file(pic[0])
 person1_face_encoding = face_recognition.face_encodings(person1_image)[0]
@@ -29,10 +29,10 @@ image1 = np.zeros((200,400,3), dtype='uint8');
 temp = cv2.imread("blank.png")
 temp = cv2.resize(temp,(200,200))
 image1[:200,:200] = temp
-images = {"nice.jpg": cv2.resize(cv2.imread(pic[0]), (200, 200)),
-          "nit.png": cv2.resize(cv2.imread(pic[1]),(200,200)),
-          "mook.jpg": cv2.resize(cv2.imread(pic[2]),(200,200)),
-          "blank.png": temp,
+images = {"xxx.jpg": cv2.resize(cv2.imread(pic[0]), (200, 200)),
+          "xxx1.png": cv2.resize(cv2.imread(pic[1]),(200,200)),
+          "xxx2.jpg": cv2.resize(cv2.imread(pic[2]),(200,200)),
+          "xxx3.png": temp,
           }
 while True:
     cap = cv2.VideoCapture(0)
